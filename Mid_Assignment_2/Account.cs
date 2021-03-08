@@ -95,22 +95,7 @@ namespace Midterm_Assignment_2
                 }
             }
 
-            public void Transfer(Account a, double amount)
-            {
-
-                if (this.balance >= amount)
-                {
-                    this.balance += amount;
-                    a.balance -= amount;
-                    Console.WriteLine("Account of " + this.accountName + " becomes $ " + this.balance);
-                    Console.WriteLine("Account of " + a.accountName + " becomes $ " + a.balance);
-
-                }
-                else
-                {
-                    Console.WriteLine("Transfer fails");
-                }
-            }
+           
             public void ShowAccountInformation()
             {
                 Console.WriteLine("Account No: " + this.accountNumber + "\nAccount Name: " + this.accountName + "\nAccount Balance: " + this.balance + "\nAddress: " + this.address + "\nDate of Birth: " + this.dateOfBirth);
